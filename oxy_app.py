@@ -14,7 +14,7 @@ def main():
     if st.button("Calculate Remaining Time"):
         if psi >= 500:
             remaining_time = calculate_remaining_time(psi, flow_rate)
-            st.write(f"Remaining Time: {remaining_time:.2f} hours")
+            st.write(f"Remaining Time: {remaining_time:.2f} minutes")
         else:
             st.error("PSI must be greater than or equal to 500")
 
