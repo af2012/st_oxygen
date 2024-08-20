@@ -6,10 +6,10 @@ def calculate_remaining_time(psi, flow_rate):
 
 def main():
     st.title("Tank Time Calculator")
-    st.write("Enter the PSI (Pounds per Square Inch) and Flow Rate (Liters per Min) to calculate the remaining time for the tank.")
+    st.write("Enter the PSI (Pounds per Square Inch) and Flow Rate to calculate the remaining time for the tank.")
     
     psi = st.number_input("Enter PSI:", min_value=0)
-    flow_rate = st.number_input("Enter Flow Rate:", min_value=0)
+    flow_rate = st.number_input("Enter Flow Rate (Liters per Min):", min_value=0)
     
     if st.button("Calculate Remaining Time"):
         if psi >= 0:
